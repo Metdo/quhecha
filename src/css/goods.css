@@ -1,0 +1,693 @@
+@charset "UTF-8";
+/*
+    
+        作者：遇见
+        时间：2019.05
+        网站：趣呵茶网
+        功能：详情页功能
+*/
+body {
+  font: 12px "微软雅黑";
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #303030;
+  font-family: Microsoft Yahei,w3;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #cd0606;
+}
+
+#goods {
+  width: 100%;
+}
+
+/*鼠标滑过全部分类显示*/
+.menu .allbtn .jspop_box {
+  display: none;
+}
+
+.allbtn:hover .jspop_box {
+  display: block;
+}
+
+.menu .allbtn h2 a:hover .jspop_box {
+  display: block;
+}
+
+/*右侧固定广告*/
+.consult {
+  position: fixed;
+  top: 370px;
+}
+
+.nav a:hover {
+  color: #cd0606;
+}
+
+/*中间内容——————————————————————————————————————————————————————————*/
+.goods_main {
+  height: 100%;
+}
+.goods_main .godds_path {
+  line-height: 30px;
+  height: 30px;
+  color: #999999;
+  margin-top: 5px;
+  clear: both;
+  margin-bottom: 5px;
+}
+.goods_main .godds_path i {
+  font-size: 10px;
+  color: #a6a6a6;
+  font-style: normal;
+  padding-right: 7px;
+  padding-left: 10px;
+}
+.goods_main .godds_path strong {
+  font-weight: normal;
+  font-size: 12px;
+}
+.goods_main .goods_goodsinfo {
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 4px 0px #a6a6a6;
+  overflow: hidden;
+  /*放大镜*/
+}
+.goods_main .goods_goodsinfo .goods_imgbox {
+  float: left;
+  width: 380px;
+  background-color: #ffffff;
+  padding: 10px;
+  height: 610px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #efefef;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto {
+  clear: both;
+  padding-top: 70px;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title {
+  padding-top: 5px;
+  line-height: 25px;
+  height: 25px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 24px;
+  font-size: 14px;
+  color: #838282;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title p {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  background-position: 5px center;
+  line-height: 22px;
+  height: 24px;
+  width: 60px;
+  display: block;
+  background-color: #f2f2f2;
+  float: left;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .shareto_fav {
+  background-image: url(../images/goodsinfo_ico1.png);
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .shareto_sha {
+  background-image: url(../images/goodsinfo_ico2.png);
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare {
+  z-index: 999999;
+  padding-bottom: 2px;
+  font-size: 12px;
+  float: left;
+  text-align: left !important;
+  zoom: 1;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare a {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  height: 16px;
+  float: left;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  padding-left: 22px;
+  background: url(../images/is.png) no-repeat;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare .bds_qzone {
+  background-position: 0 -75px !important;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare .bds_tsina {
+  background-position: 0 -115px !important;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare .bds_tqq {
+  background-position: 0 -235px !important;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare .bds_renren {
+  background-position: 0 -195px !important;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare .bds_baidu {
+  background-position: 0 -1950px !important;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare .bds_douban {
+  background-position: 0 -395px !important;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare .bds_more {
+  padding-left: 25px;
+  background: url(../images/is.png) no-repeat 0 5px !important;
+  display: block;
+  height: 16px;
+  float: left;
+  cursor: pointer;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 22px;
+}
+.goods_main .goods_goodsinfo .goods_imgbox .imgbox_shareto .shareto_title .bdshare .shareCount {
+  width: 37px;
+  height: 16px;
+  background-position: 0 -30px !important;
+  margin-top: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 16px;
+  float: left;
+  background: url(../images/sc.png) no-repeat !important;
+  margin: 4px;
+  padding: 0;
+  text-align: center;
+  padding-left: 5px;
+  color: #454545;
+  font-family: "宋体" !important;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox {
+  display: block;
+  float: left;
+  width: 658px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #ececec;
+  height: 630px;
+  background-color: #f8f8f8;
+  top: 100px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox input {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox h1 {
+  font-size: 16px;
+  color: #111111;
+  line-height: 22px;
+  padding: 20px;
+  height: 44px;
+  overflow: hidden;
+  font-weight: normal;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri {
+  background-color: #cd0606;
+  background-image: url(../images/goodsinfo_bg1.png);
+  padding-bottom: 4px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-right: -4px;
+  margin-left: -1px;
+  z-index: 9;
+  padding-top: 20px;
+  padding-right: 20px;
+  height: 84px;
+  padding-left: 20px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri li {
+  color: #ffffff;
+  float: left;
+  width: auto;
+  font-size: 14px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri li strong {
+  font-family: Arial;
+  font-size: 38px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri .t1 {
+  line-height: 14px;
+  width: 65px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri .t2 {
+  font-size: 34px;
+  padding-right: 10px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri .t3 {
+  overflow: hidden;
+  background-color: #fbffb8;
+  color: #cd0606;
+  line-height: 28px;
+  height: 28px;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 5px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri .t3 span {
+  line-height: 19px;
+  background-image: url(../images/goodsinfo_tag1.png);
+  background-repeat: no-repeat;
+  height: 19px;
+  width: 32px;
+  float: left;
+  margin-top: 5px;
+  color: #fbffb8;
+  padding-left: 15px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri .t4 {
+  width: 116px;
+  clear: both;
+  padding-top: 10px;
+  padding-left: 65px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri .t4 del {
+  text-decoration: line-through;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri .t5 {
+  padding-top: 10px;
+  padding-left: 15px;
+  width: 116px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_pri .SecDiv {
+  width: 500px;
+  border-top: solid 1px #de4b4b;
+  padding-top: 5px;
+  bottom: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  background-image: url(../images/SecBackground.jpg);
+}
+.goods_main .goods_goodsinfo .shareto_txtbox li {
+  line-height: 24px;
+  padding-bottom: 3px;
+  color: #888888;
+  zoom: 1;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox li p {
+  float: left;
+  color: #888;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox li .info_left {
+  width: 70px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 {
+  height: 24px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #dbdbdb;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 {
+  height: 100%;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 .zoli {
+  height: 35px;
+  float: left;
+  zoom: 1;
+  position: relative;
+  z-index: 1;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 .zoli .zox {
+  height: 22px;
+  float: left;
+  cursor: pointer;
+  z-index: 0;
+  padding-top: 2px;
+  padding-right: 8px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 .zoli .zox a {
+  display: block;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 0px -29px;
+  background-image: url(../images/pro_ico1.gif);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 18px;
+  padding-left: 8px;
+  border: 1px solid #e0e0e0;
+  line-height: 20px;
+  height: 20px;
+  float: left;
+  background-color: #ffffff;
+  color: #888;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 .zoli .zox p {
+  position: absolute;
+  background-color: #ffffff;
+  width: 310px;
+  z-index: 99;
+  zoom: 1;
+  top: 0px;
+  border: 1px solid #febf90;
+  left: -9999px;
+  padding: 5px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 .zoli .zox p a {
+  background-image: none;
+  margin: 0px;
+  clear: none;
+  float: left;
+  height: 22px;
+  width: 55px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  line-height: 22px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #fff;
+  padding: 0 3px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 .zoli .zox p a:hover {
+  background-image: none;
+  display: block;
+  margin: 0px;
+  height: auto;
+  width: 55px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  line-height: 22px;
+  float: left;
+  padding-top: 0px;
+  padding-right: 3px;
+  padding-bottom: 0px;
+  padding-left: 3px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 .zoli .zox a:hover {
+  white-space: nowrap;
+  z-index: 99;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ffffff;
+  color: #cd0606;
+  line-height: 20px;
+  height: 20px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: #febf90;
+  border-right-color: #febf90;
+  border-left-color: #febf90;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 .zoli .zox:hover {
+  position: relative;
+  z-index: 999;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t1 .zoli .zox:hover p {
+  position: absolute;
+  top: 23px;
+  display: block;
+  z-index: 99;
+  left: 0px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t2 {
+  height: 100%;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t2 .xstars {
+  float: left;
+  display: block;
+  width: 65px;
+  zoom: 1;
+  height: 15px;
+  overflow: hidden;
+  background: #f2f2f2;
+  margin-top: 3px;
+  background-position: 0px 181.5px;
+  background-image: url(../images/stars.png);
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info1 .info1_t2 .xstars span {
+  height: 15px;
+  width: 65px;
+  background-image: url(../images/stars.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 59px;
+  background-image: none;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info2 {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #dbdbdb;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info2 li {
+  height: 24px;
+  width: 240px;
+  clear: none;
+  float: left;
+  line-height: 26px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info2 li p {
+  overflow: hidden;
+  height: 26px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info2 .info2_t2, .goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info2 .info2_t4 {
+  width: 300px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info2 .info2_t6 {
+  width: 500px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 17px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 li {
+  line-height: 32px;
+  overflow: auto;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 li .goods_inp {
+  float: left;
+  height: 32px;
+  position: relative;
+  width: 80px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 li .goods_inp input {
+  background-image: url(../images/inp_bg1.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 20px;
+  border: 1px solid #a7a6ac;
+  width: 40px;
+  font-size: 14px;
+  text-align: center;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 li .goods_inp i {
+  background-image: url(../images/goodsinfo_img1a.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 14px;
+  width: 18px;
+  position: absolute;
+  cursor: pointer;
+  line-height: 50px;
+  overflow: hidden;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 li .goods_inp .goods_add {
+  left: 48px;
+  top: 0px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 li .goods_inp .goods_min {
+  background-position: 0px -17px;
+  top: 18px;
+  left: 48px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 li .goods_inp_info {
+  color: #cd0606;
+  margin-left: 10px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 .buy {
+  width: 185px;
+  float: left;
+  padding-top: 25px;
+}
+.goods_main .goods_goodsinfo .shareto_txtbox .txtbox_info3 .buy img {
+  border: 0;
+  width: 163px;
+  height: 35px;
+  vertical-align: middle;
+}
+.goods_main .goods_goodsinfo .shareto_probox {
+  background-color: #f4f4f4;
+  float: right;
+  height: 630px;
+  width: 190px;
+}
+.goods_main .goods_goodsinfo .shareto_probox .probox_title {
+  color: #999999;
+  text-align: center;
+  height: 30px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #838282;
+}
+.goods_main .goods_goodsinfo .shareto_probox .probox_rlist1 {
+  overflow: hidden;
+  height: 547px;
+}
+.goods_main .goods_goodsinfo .shareto_probox .goods1_slide-prev, .goods_main .goods_goodsinfo .shareto_probox .goods1_slide-next {
+  height: 18px;
+  width: 18px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.goods_main .goods_goodsinfo .shareto_probox .goods1_slide-prev {
+  margin-top: 10px;
+  margin-left: 65px;
+  background-image: url(../images/goods-prev1.png);
+}
+.goods_main .goods_goodsinfo .shareto_probox .goods1_slide-next {
+  margin-top: 10px;
+  margin-left: 30px;
+  background-image: url(../images/goods-next1.png);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+  border: 0;
+}
+
+/* #MagnifierWrap{position: relative;width: 350px;margin:100px auto;} */
+#MagnifierWrap2 {
+  position: relative;
+  width: 380px;
+  /* margin: 100px auto; */
+}
+
+.MagnifierMain {
+  position: relative;
+  width: 380px;
+  height: 380px;
+}
+
+.MagnifierMain img {
+  width: 100%;
+}
+
+.MagnifierDrag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  cursor: move;
+}
+
+.MagnifierPop {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  background: #fff url(http://fan.yoka.com/fan5.0/img/loading.gif) no-repeat center center;
+}
+
+.MagnifierImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spec-items {
+  position: relative;
+  margin-top: 10px;
+  height: 60px;
+  overflow: hidden;
+  width: 340px;
+  margin-left: 11px;
+  float: left;
+}
+
+.spec-items ul {
+  width: 500%;
+  position: absolute;
+  left: 0;
+}
+
+.spec-items ul * {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.spec-items li {
+  float: left;
+  padding: 1px;
+  height: 56px;
+  width: 56px;
+  border: 1px solid #e0e0e0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.spec-items li img {
+  width: 100%;
+  z-index: 9999;
+}
+
+span.spe_leftBtn,
+span.spe_rightBtn {
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 60px;
+  cursor: pointer;
+  margin-top: 10px;
+  opacity: 0.7;
+  background-position: center center;
+}
+
+span.spe_leftBtn {
+  left: 0;
+}
+
+span.spe_rightBtn {
+  right: 0;
+}
+
+.spe_leftBtn {
+  float: left;
+  background-image: url(../images/goods-prev.png);
+}
+
+.spe_rightBtn {
+  float: right;
+  background-image: url(../images/goods-next.png);
+}
+
+.spec-items ul li:hover {
+  border: 1px solid #d4b492;
+}
+
+/*# sourceMappingURL=goods.css.map */

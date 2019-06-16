@@ -1,0 +1,493 @@
+@charset "UTF-8";
+/*
+    
+        作者：遇见
+        时间：2019.05
+        网站：趣呵茶网
+        功能：列表页功能
+*/
+body {
+  font: 12px "微软雅黑";
+}
+
+#list {
+  width: 100%;
+}
+
+.hc_main {
+  height: 1800px;
+}
+
+/*公共样式*/
+.clr, .clear {
+  display: block;
+  overflow: hidden;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+}
+
+.line10 {
+  font-size: 0;
+  line-height: 0;
+  height: 10px;
+}
+
+.line15 {
+  font-size: 0px;
+  line-height: 0px;
+  height: 15px;
+}
+
+/*左边内容----------------------------*/
+.row1 {
+  float: left;
+  width: 190px;
+}
+.row1 .lnav_list {
+  height: 496px;
+}
+.row1 .glist_left {
+  border: 1px solid #e0e0e0;
+  width: 250px;
+}
+.row1 .glist_left .title {
+  background-color: #f7f7f7;
+  border: 1px solid #ffffff;
+  line-height: 38px;
+  height: 38px;
+}
+.row1 .glist_left .title strong {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+  padding-left: 10px;
+}
+.row1 .glist_left .prolist {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.row1 .glist_left .prolist li {
+  clear: both;
+  height: 65px;
+  padding-top: 5px;
+}
+.row1 .glist_left .prolist li .prolist_img {
+  height: 60px;
+  width: 60px;
+  float: left;
+}
+.row1 .glist_left .prolist li .prolist_img img {
+  height: 60px;
+  width: 60px;
+}
+.row1 .glist_left .prolist li .rbox {
+  width: 152px;
+  float: left;
+  padding-left: 8px;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.row1 .glist_left .prolist li .rbox .rbox_txt {
+  line-height: 16px;
+  height: 32px;
+}
+.row1 .glist_left .prolist li .rbox .rbox_txt a {
+  color: #999;
+}
+.row1 .glist_left .prolist li .rbox .rbox_pri {
+  width: 152px;
+  height: 24px;
+}
+.row1 .glist_left .prolist li .rbox .rbox_pri strong {
+  color: #cd0606;
+  font-weight: normal;
+}
+.row1 .glist_left .prolist li .rbox .rbox_pri del {
+  color: #bfbfbf;
+  padding-left: 5px;
+}
+
+/*右边内容————————————————————————————————————————————*/
+.row2 {
+  float: right;
+  width: 990px;
+}
+.row2 .hc_path {
+  height: 30px;
+  line-height: 30px;
+  color: #999;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*在左右两侧均不允许浮动元素*/
+  clear: both;
+}
+.row2 .hc_path i {
+  color: #a6a6a6;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-right: 7px;
+  /*默认值,浏览器显示一个标准的字体样式*/
+  font-style: normal;
+}
+.row2 .hc_path h1 {
+  display: inline;
+  color: #d4d4d4;
+  font-size: 12px;
+  line-height: 25px;
+}
+.row2 .proban {
+  height: 190px;
+}
+.row2 .proban .proban_t1, .row2 .proban .proban_t2 {
+  width: 375px;
+  height: 180px;
+  float: left;
+  margin-right: 10px;
+}
+.row2 .proban .proban_t3 {
+  width: 210px;
+  height: 180px;
+  float: left;
+  margin-right: 10px;
+}
+.row2 .hc_filter {
+  height: 245px;
+}
+.row2 .hc_filter .filter_title {
+  background-color: #f4f4f4;
+  border-top: 1px solid #e0e0e0;
+  line-height: 35px;
+  height: 35px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row2 .hc_filter .filter_title .clearall {
+  float: right;
+  font-size: 14px;
+  color: #666;
+}
+.row2 .hc_filter .filter_title .clearall a {
+  background-image: url(../images/list_ico1.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 18px;
+}
+.row2 .hc_filter .filter_title strong {
+  font-size: 14px;
+}
+.row2 .hc_filter .filter_list {
+  height: 209px;
+}
+.row2 .hc_filter .filter_list li {
+  line-height: 27px;
+  border-bottom: 1px dotted #e0e0e0;
+  clear: both;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.row2 .hc_filter .filter_list li .list_txt {
+  float: left;
+  width: 90px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #999999;
+  text-align: right;
+}
+.row2 .hc_filter .filter_list li .list_box {
+  float: left;
+  width: 65px;
+  cursor: pointer;
+}
+.row2 .hc_filter .filter_list li .list_box .list_on {
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  float: left;
+  padding-bottom: 3px;
+}
+.row2 .hc_filter .filter_list li .list_box .list_on a {
+  background-color: #559b0d;
+  color: #ffffff;
+  font-size: 12px;
+  float: left;
+  padding-right: 9px;
+  padding-left: 9px;
+  line-height: 21px;
+  height: 21px;
+  transition: background-color;
+}
+.row2 .hc_filter .filter_list li .menu_list {
+  margin-left: 175px;
+}
+.row2 .hc_filter .filter_list li .menu_list p {
+  float: left;
+  padding: 3px 10px 3px 10px;
+}
+.row2 .hc_filter .filter_list li .menu_list p input {
+  border: 1px solid #ccc;
+}
+.row2 .hc_filter .filter_list li .menu_list .clear {
+  display: block;
+  overflow: hidden;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+}
+.row2 .hc_sort {
+  height: 34px;
+  line-height: 34px;
+  background-color: #f4f4f4;
+  border: 1px solid #e0e0e0;
+}
+.row2 .hc_sort .send {
+  width: 109px;
+}
+.row2 .hc_sort .sort li {
+  float: left;
+  line-height: 20px;
+  margin-left: 10px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.row2 .hc_sort .sort li a {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #e8e8e8;
+  background-color: #fafafa;
+  color: #666;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-repeat: no-repeat;
+  background-position: 32px center;
+}
+.row2 .hc_sort .sort li .asc {
+  background-image: url(../images/list_ico3a.png);
+  padding-right: 18px;
+}
+.row2 .hc_sort .sort li .desc {
+  padding-right: 18px;
+  background-image: url(../images/list_ico4a.png);
+}
+.row2 .hc_sort .sort li a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.row2 .hc_sort .page {
+  float: right;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.row2 .hc_sort .page li {
+  height: 21px;
+  line-height: 21px;
+  float: left;
+  padding-top: 7px;
+}
+.row2 .hc_sort .page li span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.row2 .hc_sort .page li .page_in {
+  color: #999;
+  padding-right: 10px;
+}
+.row2 .hc_sort .page li .page_pr {
+  padding-left: 1px;
+  padding-right: 5px;
+}
+.row2 .hc_sort .page li .page_pg {
+  color: #666;
+}
+.row2 .hc_sort .page li .page_nx {
+  padding-left: 5px;
+  padding-right: 1px;
+}
+.row2 .hc_sort .page_style {
+  width: 78px;
+  height: 34px;
+  border: 1px solid #e0e0e0;
+}
+.row2 .hc_sort .page_style li {
+  float: left;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+.row2 .hc_sort .page_style li a {
+  float: left;
+  line-height: 100px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  height: 19px;
+  width: 22px;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+.row2 .hc_sort .page_style li .page_style_img {
+  border: 1px solid #358000;
+  background-color: #358000;
+  background-position: 0px -19px;
+  background-image: url(../images/list_ico12.png);
+}
+.row2 .hc_sort .page_style li .page_style_list {
+  background-image: url(../images/list_ico13.png);
+}
+.row2 .hc_goods_mod {
+  height: 100%;
+}
+.row2 .hc_goods_mod .goods_modimg {
+  width: 1000px;
+  position: relative;
+  margin-right: -10px;
+}
+.row2 .hc_goods_mod .goods_modimg li {
+  float: left;
+  width: 240px;
+  height: 395px;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  /*鼠标滑过样式*/
+}
+.row2 .hc_goods_mod .goods_modimg li .goods {
+  width: 236px;
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #fff;
+  min-height: 395px;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_img {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 0;
+  padding-top: 11px;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_img img {
+  width: 100%;
+  height: 100%;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_name {
+  line-height: 18px;
+  padding: 0 10px 0;
+  margin-top: 8px;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_name a {
+  line-height: 18px;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_name a span {
+  display: block;
+  height: 36px;
+  overflow: hidden;
+  color: #888888;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_name a strong {
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_name.goods_name:hover span {
+  color: #ff7300;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_pri {
+  height: 24px;
+  line-height: 24px;
+  padding: 5px 10px 0 10px;
+  margin-top: 10px;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_pri span {
+  float: left;
+  font-size: 16px;
+  color: #cd0606;
+  line-height: 22px;
+  padding-right: 5px;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_mpri {
+  height: 18px;
+  line-height: 18px;
+  padding: 0 10px 0;
+  clear: both;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_mpri small {
+  float: left;
+  font-size: 12px;
+  color: #999;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_mpri small del {
+  padding: 3px;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_mpri .mpri_com {
+  float: right;
+  color: #999;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_mpri .mpri_com a {
+  color: #005aa0;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_buy {
+  height: 35px;
+  padding-left: 5px;
+  /*左右字段不允许浮动*/
+  clear: both;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_buy a {
+  float: left;
+  height: 23px;
+  line-height: 23px;
+  border: 1px solid #d9d9d9;
+  background-color: #f5f5f5;
+  padding: 0 9px 0;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_buy .buy_go:hover {
+  color: #fff;
+  background-color: #c80606;
+  border: 1px solid #c80606;
+  transition: border-color;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods .goods_buy .buy_cat:hover {
+  color: #fff;
+  background-color: #835a31;
+  border: 1px solid #835a31;
+  transition: border-color;
+}
+.row2 .hc_goods_mod .goods_modimg li .goods:hover {
+  z-index: 999;
+  position: relative;
+  box-shadow: 1px 1px 4px 0 #999;
+}
+.row2 .hc_page_list {
+  text-align: right;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+  clear: both;
+}
+.row2 .hc_page_list p {
+  display: inline;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 2px 0;
+}
+.row2 .hc_page_list p a {
+  background-color: #fcfcfc;
+  border: 1px solid #dbdbdb;
+  padding: 3px 10px;
+  line-height: 20px;
+}
+.row2 .hc_page_list p a:hover {
+  text-decoration: none;
+}
+.row2 .hc_page_list p .active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #60a411;
+  border: 1px solid #60a411;
+}
+
+/*# sourceMappingURL=list.css.map */

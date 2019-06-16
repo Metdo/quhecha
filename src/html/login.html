@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>登陆</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/commom.css">
+    <link rel="stylesheet" href="../css/reg.css">
+    <style>
+        /*右侧固定广告*/
+        .consult {
+            position: fixed;
+            top: 45%;
+            right: 10px;
+        }
+
+        .allbtn:hover .jspop_box {
+            display: block;
+        }
+
+        .nav a:hover {
+            color: #cd0606;
+        }
+
+        .top {
+            height: 100%;
+        }
+
+        .bottom {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="reg">
+        
+       <div class="top">
+
+       </div>
+        
+
+        <!-- +=====++++++++++++头部分割线+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+
+        <!--中间部分内容—————————————————————————————————————————————————————————————————————————— -->
+        <div class="users_main">
+            <div class="cantainer">
+                <div class="users_reg">
+                    <!-- 左边图片 -->
+                    <div class="reg_left fl">
+                        <img src="../images/login_show1.jpg" alt="">
+                    </div>
+
+                    <!-- 右边内容 -->
+                    <div class="regbox fr">
+                        <div class="regbox_title">
+                            <ul>
+                                <li class="title_register"><a id="loginLink" href="login.html">登录和茶网</a></li>
+                                <li><a href="reg.html">新用户注册</a></li>
+                                <div class="clr"></div>
+                            </ul>
+                        </div>
+                        <!-- 注册 -->
+                        <div class="regbox_list">
+                            
+
+                            <!-- <div class="txt">
+                                <p class="msg">
+                                    您提供的所有信息，绝不会被公开或用作其他用途，请放心填写。
+                                </p>
+                            </div> -->
+                            <!-- 注册 -->
+                            <!-- <ul class="regbox_login" >
+                            
+                            </ul> -->
+
+                            <!-- 登陆 -->
+                            <ul class="regbox_reg" style="display:block">
+                                <!-- 登录名 -->
+                                <li>
+                                    <p class="login_ta">
+                                        登录名
+                                    </p>
+                                    <p class="login_ip">
+                                        <input id="txtUserName" name="txtUserName" type="text" class="input" data-form-un="1557827402425.719">
+                                    </p>
+                                    <p class="login_in"><span>请输入您注册的登录名
+                                            <!-- 邮箱 / 手机号--></span></p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+                                
+                                <!-- 密码 -->
+                                <li>
+                                    <p class="login_ta">
+                                        密&nbsp;&nbsp;码
+                                    </p>
+                                    <p class="login_ip">
+                                        <input id="txtPassword" name="txtPassword" type="password" class="input" data-form-pw="1557827402425.719">
+                                    </p>
+                                    <p class="login_in">
+                                        <a href="GetPassWord.html" target="_blank">忘了密码？</a>
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!-- 用户登陆 -->
+                                <li>
+                                    <p class="login_ta">
+                                        &nbsp;
+                                    </p>
+                                    <p class="login_ip">
+                                        <input id="Submit" name="" type="image" src="../images/login.png" value="Submit">
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!--  -->
+                                <li>
+                                    <dl>
+                                        <dt>您还可以使用网站账号登录和茶网:</dt>
+                                        <dd>
+                                            <a href="###" class="l_alipay" id="alipay">
+                                                alipay
+                                            </a>
+                                            <a href="###" class="l_wb">taobao</a>
+                                            <a href="###" class="l_qq" id="qq_Login">qq</a>
+                                            <a href="###" class="l_wx">wx</a>
+                                            <div class="clr"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 登入 -->
+                        <!-- <div class="regbox_list">
+                            <ul class="regbox_reg">
+                            
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- +=====++++++++++++底部分割线+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <div class="bottom">
+
+        </div>
+
+        <div class="consult">
+            <img src="../images/zixun.png" alt="">
+        </div>
+    </div>
+</body>
+
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/reg.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+    <script>
+        $(".top").load("head.html");
+        $(".bottom").load("foot.html");
+    
+    </script>
+</html>

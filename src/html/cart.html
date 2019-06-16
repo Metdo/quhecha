@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/commom.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- <style>
+
+        .allbtn:hover .jspop_box {
+            display: block;
+        }
+
+        .nav a:hover {
+            color: #cd0606;
+        }
+
+        .top {
+            height: 100%;
+        }
+
+        .bottom {
+            height: 100%;
+        }
+
+        
+    
+    </style> -->
+
+    
+</head>
+<body>
+    <div id="cart" >
+        
+        <div class="top">
+        
+        </div>
+
+    <!--+=====++++++++++++头部分割线++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+        <div class="cart_main">
+            <div class="cantainer">
+                <div class="cart_sol">
+                    <div class="title">
+                        <em>
+                            <a href="###" class="buy">结算</a>
+                        </em>
+                        <em>已选商品(不含运费)：
+                            <strong>¥
+                                <span id="totalprice">0</span>
+                            </strong>
+                        </em>
+                        <h3>
+                            我的购物车
+                        </h3>
+                    </div>
+
+                    <!-- 购物车列表 -->
+                    <div class="cart_list">
+                        <li class="txa">
+                            <p class="ck">
+                                选择
+                            </p>
+                            <p class="img">
+                                &nbsp;
+                            </p>
+                            <p class="txt">
+                                &nbsp;
+                            </p>
+                            <p class="mpri">
+                                单价(元)
+                            </p>
+                            <p class="save">
+                                优惠(元)
+                            </p>
+                            <p class="sunm">
+                                数量
+                            </p>
+                            <p class="pri">
+                                金额(元)
+                            </p>
+                            <p class="st">
+                                操作
+                            </p>
+                            <div class="clr">
+                            </div>
+                        </li>
+                    </div>
+
+                    <div  class="ShoppingCartList" id="ShoppingCartList">
+                        <li class="txb">
+                            <p class="cd">
+                                <input name="ckbpartner" type="checkbox" value="">
+                            </p>
+                            <p class="ico">
+                                <span>+</span>
+                            </p>
+                            <p class="bt2">
+                                商铺: 主站</p>
+                            <p class="bt3">
+                                <strong></strong>
+                            </p>
+                            <div class="clr">
+                            </div>
+                        </li>
+
+                        <li class="txd">
+                            <p class="tx">MH总仓库</p>
+                        </li>
+
+                        <!-- 加入购物车的商品 -->
+                        <!-- <li class="pro" data-id="1">
+                            <p class="ce">
+                                <input type="checkbox" name="ckb" id="">
+                            </p>
+
+                            <p class="pro_img">
+                                <a href="###">
+                                    <img src="../images/20150610044100.JPG">
+                                </a>
+                            </p>
+
+                            <p class="txt">
+                                【滋恩】隽永大红袍50g*2罐特惠装
+                            </p>
+
+                            <p class="mpri">
+                                <del> 176.00</del>
+                                <strong class="price">59.00</strong>
+                            </p>
+
+                            <p class="save">
+                                <strong>117.00</strong>
+                                <small>3.4折</small>
+                            </p>
+                             
+                            <p class="sunm">
+                                <i class="goods_min">-</i>
+                                <input class="goodsnum" name="goodsnum" data-num="30"value="1" type="text" >
+                                <i class="goods_add">+</i>
+                                
+                            </p>
+
+                            <p class="pri">
+                                <strong class="prices"> 59.00</strong>
+                            </p>
+
+                            <p class="st">
+                                <span class="del">X</span>
+                            </p>
+                        </li>
+
+
+                        <li class="pro">
+                            <p class="ce">
+                                <input type="checkbox" name="ckb" id="">
+                            </p>
+                        
+                            <p class="pro_img">
+                                <a href="###">
+                                    <img src="../images/20150610044100.JPG">
+                                </a>
+                            </p>
+                        
+                            <p class="txt">
+                                【滋恩】隽永大红袍50g*2罐特惠装
+                            </p>
+                        
+                            <p class="mpri">
+                                <del> 176.00</del>
+                                <strong class="price">59.00</strong>
+                            </p>
+                        
+                            <p class="save">
+                                <strong>117.00</strong>
+                                <small>3.4折</small>
+                            </p>
+                        
+                            <p class="sunm">
+                                <i class="goods_min">-</i>   
+                                <input class="goodsnum" name="goodsnum" value="1" data-num="20"type="text">
+                                <i class="goods_add">+</i>
+                                
+                            </p>
+                        
+                            <p class="pri">
+                                <strong class="prices"> 59.00</strong>
+                            </p>
+                        
+                            <p class="st">
+                                <span class="del">X</span>
+                            </p>
+                        </li> -->
+
+
+                        <!-- 赠品积分 -->
+                        <div id="GiftList" class="GiftList">
+                            <li class="txb">
+                                <p class="cd">
+                                    &nbsp;</p>
+                                <p class="ico">
+                                    <span class="gift">+</span>
+                                </p>
+                                <p class="bt2">
+                                    赠品</p>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li class="pro">
+                                <p class="ce">
+                                    &nbsp;</p>
+                                <p class="pro_img">
+                                    <span class="juan">
+                                        <strong class="strong">178</strong>
+                                        <small class="small">和茶网积分</small>
+                                    </span>
+                                </p>
+                                <p class="txt">
+                                </p>
+                                <p class="mpri">
+                                    <strong>178积分</strong>
+                                </p>
+                                <p class="save">
+                                    &nbsp;</p>
+                                <p class="sunm">
+                                    &nbsp;</p>
+                                <p class="pri">
+                                </p>
+                                <p class="st">
+                                    &nbsp;</p>
+                                <div class="clr">
+                                </div>
+                            </li>
+                        </div>
+
+                        <!-- 全选，全删 -->
+                        <li class="txe">
+                            <p class="ck">
+                                <input name="" type="checkbox" value="" > 全选
+                            </p>
+                            <p class="str">
+                                <a href="###">
+                                    <span class="dels">X</span>
+                                    <strong>删除全部</strong>
+                                </a>
+                            </p>
+                            <div class="clr">
+                            </div>
+                        </li>
+                        <!-- 空白格 -->
+                        <div class="clr line10"></div>
+                    </div>
+
+                    <!-- 分割线  -->
+
+                    <!-- 结算 -->
+                    <div class="pribox">
+                        <div class="rbox">
+                            <p class="pri">
+                                ¥<span id="pp">0</span>
+                            </p>
+                            <p class="tx">
+                                商品总价(不含运费)：
+                            </p>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="cart_buy">
+                        <p class="back">
+                            <a href="###" target="_blank">继续购物</a>
+                        </p>
+                        <p class="buy">
+                            <a href="###">去结算</a>
+                        </p>
+                        <div class="clr">
+                        </div>
+                    </div>
+                    
+
+                    <!-- 根据浏览推荐商品 -->
+                    <div class="comprobox">
+                        <div class="comprotil">
+                            <ol>
+                                <li class="on">根据浏览猜你喜欢</li>
+                            </ol>
+                        </div>
+                        <div class="comprolist" id="userfavorite"><ul class="proli1"> </ul></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+        
+       <div class="bottom">
+
+       </div>
+
+    </div>
+   
+    
+</body>
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/cart.js"></script>
+    <script>
+        $(".top").load("cart_top.html");
+        $(".bottom").load("foot.html");
+
+    </script>
+</html>

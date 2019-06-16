@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/*
+    
+        作者：遇见
+        时间：2019.05
+        网站：趣呵茶网
+        功能：列表页功能
+*/
+body {
+  font: 12px "微软雅黑";
+}
+
+#reg {
+  width: 100%;
+}
+
+/*鼠标滑过全部分类显示*/
+.menu .allbtn .jspop_box {
+  display: none;
+}
+
+.allbtn:hover .jspop_box {
+  display: block;
+}
+
+.menu .allbtn h2 a:hover .jspop_box {
+  display: block;
+}
+
+/*中间内容————————————————————————————————————————————————————————*/
+.users_main {
+  background-color: #f5f5f5;
+}
+.users_main .users_reg {
+  height: 100%;
+  overflow: hidden;
+}
+.users_main .users_reg .reg_left {
+  width: 570px;
+  height: 550px;
+  padding-top: 30px;
+}
+.users_main .users_reg .reg_left img {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.users_main .users_reg .regbox {
+  width: 608px;
+  height: 474px;
+  margin-top: 35px;
+  background-color: #fff;
+  box-shadow: 1px 0 5px 0 #dbdbdb;
+  border: 1px solid #e4e4e4;
+}
+.users_main .users_reg .regbox .inpue {
+  width: 231px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 14px;
+  border: 1px solid #b4b6b7;
+  padding: 0 5px 0;
+  background-image: url(../images/inp_bg1.png);
+}
+.users_main .users_reg .regbox .regbox_title {
+  height: 46px;
+}
+.users_main .users_reg .regbox .regbox_title ul {
+  margin-top: -1px;
+  position: relative;
+}
+.users_main .users_reg .regbox .regbox_title ul li {
+  float: left;
+  width: 50%;
+  height: 46px;
+  font-size: 16px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+}
+.users_main .users_reg .regbox .regbox_title ul li a {
+  display: block;
+  background-color: #f5f5f5;
+  text-align: center;
+  line-height: 44px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+.users_main .users_reg .regbox .regbox_title ul .title_register {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #60a411;
+  height: 44px;
+}
+.users_main .users_reg .regbox .regbox_title ul .title_register a {
+  background-color: #ffffff;
+  color: #358000;
+}
+.users_main .users_reg .regbox .regbox_list {
+  width: 100%;
+  height: 441px;
+}
+.users_main .users_reg .regbox .regbox_list ul {
+  display: none;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login {
+  height: 390px;
+  margin-top: 28px;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li {
+  margin-bottom: 18px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li p {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li .login_ta {
+  width: 70px;
+  font-size: 16px;
+  color: #666;
+  text-align: right;
+  padding-right: 15px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li .login_ip {
+  float: left;
+  width: 240px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li .login_ip .input {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  width: 231px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 14px;
+  border: 1px solid #b4b6b7;
+  padding: 0 5px 0;
+  background-image: url(../images/inp_bg1.png);
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li .login_ip option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li .login_ip em {
+  float: right;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li .login_ip em .login_code {
+  width: 48px;
+  height: 25px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li .login_in {
+  width: 210px;
+  height: 32px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login li .login_in span {
+  color: #999;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_login .reginp1 {
+  padding-top: 24px;
+}
+.users_main .users_reg .regbox .regbox_list .login_txt {
+  border: 1px solid #e4e4e4;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+}
+.users_main .users_reg .regbox .regbox_list .login_txt .login_msg {
+  text-align: center;
+  height: 40px;
+  color: #999999;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg {
+  margin-top: 60px;
+  height: 212px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li {
+  margin-bottom: 33px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li p {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li .login_ta {
+  width: 70px;
+  font-size: 16px;
+  color: #666;
+  text-align: right;
+  padding-right: 15px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li .login_ip {
+  float: left;
+  width: 240px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li .login_ip .input {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  width: 231px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 14px;
+  border: 1px solid #b4b6b7;
+  padding: 0 5px 0;
+  background-image: url(../images/inp_bg1.png);
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li .login_in {
+  width: 210px;
+  height: 32px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li .login_in span {
+  color: #999;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li dl {
+  height: 60px;
+  padding: 20px 0 0 40px;
+  padding-bottom: 20px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li dl dt {
+  padding-left: 6px;
+  color: #666;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li dl dd {
+  padding-top: 10px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li dl dd a {
+  float: left;
+  width: 78px;
+  height: 22px;
+  line-height: 100px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li dl dd .l_alipay {
+  background-image: url(../images/login_alipay.png);
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li dl dd .l_wb {
+  background-image: url(../images/login_weibo.png);
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li dl dd .l_qq {
+  background-image: url(../images/login_qq.png);
+}
+.users_main .users_reg .regbox .regbox_list .regbox_reg li dl dd .l_wx {
+  background-image: url(../images/login_wx.png);
+}
+
+/*# sourceMappingURL=reg.css.map */

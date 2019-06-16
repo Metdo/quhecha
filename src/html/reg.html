@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/commom.css">
+    <link rel="stylesheet" href="../css/reg.css">
+    <!-- <style>
+        /*右侧固定广告*/
+        .consult {
+            position: fixed;
+            top: 350px;
+            right: 10px;
+        }
+
+
+        .allbtn h2:hover .jspop_box {
+            display: block;
+        }
+
+        .nav a:hover{
+            color: #cd0606;
+        }
+        
+    </style> -->
+    <style>
+        /*右侧固定广告*/
+        .consult {
+            position: fixed;
+            top: 350px;
+            right: 10px;
+        }
+    
+        .allbtn:hover .jspop_box {
+            display: block;
+        }
+    
+        .nav a:hover {
+            color: #cd0606;
+        }
+    </style>
+</head>
+<body>
+    <div id="reg">
+        
+        <div class="top"></div>
+
+        <!-- +=====++++++++++++头部分割线+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+
+        <!--中间部分内容—————————————————————————————————————————————————————————————————————————— -->
+        <div class="users_main">
+            <div class="cantainer">
+                <div class="users_reg">
+                    <!-- 左边图片 -->
+                    <div class="reg_left fl">
+                        <img src="../images/login_show1.jpg" alt="">
+                    </div>
+
+                    <!-- 右边内容 -->
+                    <div class="regbox fr">
+                        <div class="regbox_title">
+                            <ul>
+                                <li><a id="loginLink" href="login.html">登录和茶网</a></li>
+                                <li class="title_register"><a href="reg.html">新用户注册</a></li>
+                                <div class="clr"></div>
+                            </ul>
+                        </div>
+                            
+                        <div class="regbox_list" >
+                            <!-- 注册 -->
+                            <ul class="regbox_login" id="regbox_login" style="display:block">
+                                <!-- 登陆 -->
+                                <li id="login_list">
+                                    <p class="login_ta">
+                                        登录名
+                                    </p>
+                                    <p class="login_ip">
+                                        <input name="LoginAccount"  class="input int" id="LoginAccount" type="text">
+                                    </p>
+                                    <p class="login_in">
+                                        <span class="inf" id="loginaccount_notice">请输入你的账号</span>
+                                        <!-- 请输入你的账号 -->
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!-- 昵称 -->
+                                <li>
+                                    <p class="login_ta">
+                                        昵称
+                                    </p>
+                                    <p class="login_ip">
+                                        <input name="LoginName" class="input" id="LoginName" type="text">
+                                    </p>
+                                    <p class="login_in">
+                                        <span class="inf" id="email_notice">请输入你的昵称</span>
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!-- 密码 -->
+                                <li>
+                                    <p class="login_ta">
+                                        密&nbsp;&nbsp;码
+                                    </p>
+                                    <p class="login_ip">
+                                        <input name="password" class="input" id="PassWord" type="password">
+                                    </p>
+                                    <p class="login_in">
+                                        <span class="inf" id="password_notice">字母开头6-16位数字和字母组成,区分大小写</span>
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!-- 确认密码 -->
+                                <li>
+                                    <p class="login_ta">
+                                        确认密码
+                                    </p>
+                                    <p class="login_ip">
+                                        <input name="AgainPassWord" class="input" id="AgainPassWord" type="password">
+                                    </p>
+                                    <p class="login_in">
+                                        <span class="inf" id="conform_password_notice">请重复输入上面的密码</span>
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!-- 问题 -->
+                                <li>
+                                    <p class="login_ta">
+                                        问题
+                                    </p>
+                                    <p class="login_ip">
+                                        <select id="Ruestion" class="input">
+                                            <option>你的三围是？</option>
+                                            <option>你的电话号码是?</option>
+                                            <option>你的母亲叫什么名字?</option>
+                                            <option>你的父亲叫什么名字?</option>  
+                                            <option>你的老婆叫什么名字?</option>
+                                            <option>你的老公叫什么名字?</option>
+                                            <option>你的出生年月日?</option>
+                                        </select>
+                                    </p>
+                                    <p class="login_in">
+                                        <span class="inf">找回密码所提示的问题</span>
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!-- 回答 -->
+                                <li>
+                                    <p class="login_ta">
+                                        回答
+                                    </p>
+                                    <p class="login_ip">
+                                        <input name="Result" class="input" id="Result" type="password">
+                                    </p>
+                                    <p class="login_in">
+                                        <span>找回密码所要的答案</span>
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!-- 电子邮箱 -->
+                                <li>
+                                    <p class="login_ta">
+                                        电子邮件
+                                    </p>
+                                    <p class="login_ip">
+                                        <input name="Email" class="input" id="Email" type="text">
+                                    </p>
+                                    <p class="login_in">
+                                        <span class="inf" id="emailInfo">必填</span>
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!-- 验证码 -->
+                                <li>
+                                    <p class="login_ta">
+                                        验证码
+                                    </p>
+                                    <p class="login_ip">
+                                        <em>
+                                            <input type="button" id="login_code" class="login_code" value="">
+                                        </em>
+                                        <input id="ValidateCode" name="ValidateCode" type="text" class="input" style="width: 110px;">
+                                    </p>
+                                    <p class="login_in">
+                                        <a href="javascript:;" id="chageImage" class="bluetxt" style="text-decoration: underline;
+                                         cursor: pointer">换一个</a>&nbsp;&nbsp;
+                                        <span class="inf" >请输入验证码</span>
+                                    </p>
+                                    
+                                    <div class="clr">
+                                    </div>
+                                </li>
+
+                                <!-- 同意注册 -->
+                                <li class="reginp1">
+                                    <p class="login_ta">
+                                        &nbsp;
+                                    </p>
+                                    <p class="login_ip">
+                                        <input id="Register" name="" type="image" src="../images/reg.png"
+                                            value="Submit">
+                                    </p>
+                                    <p class="login_in">
+                                        <a href="http://www.hecha.cn/help/show-1.html">阅读《和茶用户协议》</a>
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li>
+                                <!-- <div class="txt">
+                                    <p class="msg">
+                                        您提供的所有信息，绝不会被公开或用作其他用途，请放心填写。
+                                    </p>
+                                </div> -->
+                            </ul>
+                            
+                            <div class="login_txt">
+                                <p class="login_msg">
+                                    您提供的所有信息，绝不会被公开或用作其他用途，请放心填写。
+                                </p>
+                            </div>
+
+
+
+                            <!-- 登陆 -->
+                            <ul class="regbox_reg">
+                                <!-- 登录名 -->
+                                <!-- <li>
+                                    <p class="login_ta">
+                                        登录名
+                                    </p>
+                                    <p class="login_ip">
+                                        <input id="txtUserName" name="txtUserName" type="text" class="input" data-form-un="1557827402425.719">
+                                    </p>
+                                    <p class="login_in"><span>请输入您注册的登录名
+                                            <!-- 邮箱 / 手机号--></span></p>
+                                    <div class="clr">
+                                    </div>
+                                </li> -->
+
+                                <!-- 密码 -->
+                                <!-- <li>
+                                    <p class="login_ta">
+                                        密&nbsp;&nbsp;码
+                                    </p>
+                                    <p class="login_ip">
+                                        <input id="txtPassword" name="txtPassword" type="password" class="input" data-form-pw="1557827402425.719">
+                                    </p>
+                                    <p class="login_in">
+                                        <a href="GetPassWord.html" target="_blank">忘了密码？</a>
+                                    </p>
+                                    <div class="clr">
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+
+                        <!-- 登入 -->
+                        <!-- <div class="regbox_list">
+                            <ul class="regbox_reg">
+                            
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- +=====++++++++++++底部分割线+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        
+        <!-- 底部内容 -->
+      
+        <div class="bottom"></div>
+        
+        <div class="consult">
+            <img src="../images/zixun.png" alt="">
+        </div>
+    </div>
+</body>
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/reg.js"></script>
+    <!-- <script src="../js/reg_tea.js"></script> -->
+    <script src="../js/reg_tea.js"></script>
+
+    <script>
+        $(".top").load("head.html");
+        $(".bottom").load("foot.html");
+    
+    
+    </script>
+</html>

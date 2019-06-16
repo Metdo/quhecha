@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/commom.css">
+    <link rel="stylesheet" href="../css/goods.css">
+</head>
+
+<!-- <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        img {
+            vertical-align: top;
+            border: 0;
+        }
+    
+        /* #MagnifierWrap{position: relative;width: 350px;margin:100px auto;} */
+        #MagnifierWrap2 {
+            position: relative;
+            width: 350px;
+            /* margin: 100px auto; */
+        }
+    
+        .MagnifierMain {
+            position: relative;
+            width: 350px;
+            height: 350px;
+        }
+    
+        .MagnifierMain img {
+            width: 100%;
+        }
+    
+        .MagnifierDrag {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #ccc;
+            opacity: 0.4;
+            filter: alpha(opacity=40);
+            cursor: move;
+        }
+    
+        .MagnifierPop {
+            position: absolute;
+            top: 0;
+            overflow: hidden;
+            background: #fff url(http://fan.yoka.com/fan5.0/img/loading.gif) no-repeat center center;
+        }
+    
+        .MagnifierImg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        .spec-items {
+            position: relative;
+            width: 292px;
+            height: 69px;
+            overflow: hidden;
+            padding-top: 10px;
+            margin: 0 auto;
+        }
+    
+        .spec-items ul {
+            width: 500%;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    
+        .spec-items ul * {
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+        }
+    
+        .spec-items li {
+            width: 65px;
+            height: 65px;
+            float: left;
+            overflow: hidden;
+            margin-right: 5px;
+            border: 2px solid #fff;
+            cursor: pointer;
+    
+        }
+    
+        .spec-items li.on {
+            border: 2px solid #000;
+        }
+    
+        .spec-items li img {
+            width: 100%;
+        }
+    
+        span.spe_leftBtn,
+        span.spe_rightBtn {
+            position: absolute;
+            bottom: 0px;
+            display: block;
+            width: 20px;
+            height: 69px;
+            line-height: 69px;
+            font-family: "黑体";
+            text-align: center;
+            font-size: 30px;
+            color: #ddd;
+            cursor: default;
+            background-color: #f9f9f9;
+        }
+    
+        span.on {
+            background-color: #ccc;
+            color: #999;
+            cursor: pointer;
+        }
+    
+        span.spe_leftBtn {
+            left: 0;
+        }
+    
+        span.spe_rightBtn {
+            right: 0;
+        }
+    </style> -->
+
+
+
+
+
+<body>
+    <div id="goods">
+        
+        <div class="top"></div>
+
+        <!-- +=====++++++++++++头部分割线+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <div class="goods_main">
+            <div class="cantainer">
+                <!-- 头部 -->
+                <div class="godds_path">
+                    <a href="###">首页</a>
+                    <i>〉</i>
+                    <a href="###">各地名优茶</a>
+                    <i>〉</i>
+                    <a href="###">乌龙茶</a>
+                    <i>〉</i>
+                    <a href="###">大红袍</a>
+                    <i>〉</i>
+                    <strong> 【滋恩】隽永大红袍50g*2罐特惠装</strong>
+                </div>
+
+                <div class="goods_goodsinfo">
+                    <!-- 左边 -->
+                    <div class="goods_imgbox">
+
+                        <!-- 左边放大镜 -->
+                        <div id="MagnifierWrap2">
+                            <div class="MagnifierMain">
+                                <img class="MagTargetImg" src="../images/20150610044107.JPG"
+                                    data-src="../images/20150610044107.JPG">
+                            </div>
+                            <span class="spe_leftBtn on">&nbsp;</span>
+                            <span class="spe_rightBtn on">&nbsp;</span>
+                            <div class="spec-items">
+                                <ul>
+                                    <li class="on"><img src="../images/20150610044107.JPG"
+                                            data-lsrc="../images/20150610044107.JPG"
+                                            data-maxSrc="../images/20150610044107.JPG"></li>
+                                    <li><img src="../images/20150731035226.JPG" data-lsrc="../images/20150731035226.JPG"
+                                            data-maxSrc="../images/20150731035226.JPG"></li>
+                                    <li><img src="../images/20150731035231.JPG" data-lsrc="../images/20150731035231.JPG"
+                                            data-maxSrc="../images/20150731035231.JPG"></li>
+                                    <li><img src="../images/20150731035236.JPG" data-lsrc="../images/20150731035236.JPG"
+                                            data-maxSrc="../images/20150731035236.JPG"></li>
+
+                                    <li><img src="../images/20150731035241.JPG" data-lsrc="../images/20150731035241.JPG"
+                                            data-maxSrc="../images/20150731035241.JPG"></li>
+                                    <!-- <li><img src="userimg2.jpg" data-lsrc="userimg2.jpg" data-maxSrc="userimg2-big.jpg"></li> -->
+                                    <!-- <li><img src="userimg3.jpg" data-lsrc="userimg3.jpg" data-maxSrc="userimg3-big.jpg"></li>
+                                    <li><img src="userimg4.jpg" data-lsrc="userimg4.jpg" data-maxSrc="userimg4-big.jpg"></li>
+                        
+                                    <li><img src="userimg2.jpg" data-lsrc="userimg2.jpg" data-maxSrc="userimg2-big.jpg"></li>
+                                    <li><img src="userimg3.jpg" data-lsrc="userimg3.jpg" data-maxSrc="userimg3-big.jpg"></li>
+                                    <li><img src="userimg4.jpg" data-lsrc="userimg4.jpg" data-maxSrc="userimg4-big.jpg"></li> -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 左边下面 -->
+                        <div class="imgbox_shareto">
+                            <div class="shareto_title">
+                                <p class="shareto_fav" onclick="javascript:collect(4027)">
+                                    收藏商品
+                                </p>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div class="shareto_title">
+                                <p class="shareto_sha" onclick="javascript:collect(4027)">
+                                    分享商品
+                                </p>
+                                <div class="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                    <a href="###" title="分享到QQ空间" class="bds_qzone"></a>
+                                    <a href="###" title="分享到新浪微博" class="bds_tsina"></a>
+                                    <a href="###" title="分享到腾讯微博" class="bds_tqq"></a>
+                                    <a href="###" title="分享到人人网" class="bds_renren"></a>
+                                    <a href="###" title="分享到百度搜藏" class="bds_baidu"></a>
+                                    <a href="###" title="分享到豆瓣网" class="bds_douban"></a>
+                                    <span class="bds_more">更多</span>
+                                    <a title="累计分享1次" href="###" class="shareCount">1</a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                    <!-- 中间------------------------------------- -->
+                    <div class="shareto_txtbox">
+                        <!-- <input type="hidden" id="ProductBandCategory" value="06f6c387-5fd8-4d03-bd92-73e88e5f805f_e59acaf7-4bd2-4de3-9791-c9145a7236d2_a51ebb89-a615-4471-ab21-985d41f943c2_e631a1e1-6b62-4cba-944c-2451110f3abd"> -->
+                        <!-- <h1 id="lgoodname">
+                            【滋恩】隽永大红袍50g*2罐特惠装
+                            <span id="emailkc"></span>
+                            <input id="pdataID" type="hidden" value="06f6c387-5fd8-4d03-bd92-73e88e5f805f">
+                            <input id="pID" type="hidden" value="421e3795-c740-476d-b5ae-d1a3232a5543">
+                        </h1>
+
+                        <ul class="txtbox_pri">
+                            <li class="t1" id="salePriceExplain">活动价</li>
+                            <li class="t2">¥<strong id="salePrice">59.00</strong></li>
+                            <li class="t3" style="display: none;">
+                                <span>特享</span>
+                                <font id="saleMessage"></font>
+                            </li>
+                            <li class="t4">和茶价 ¥<del id="hechaPrice">89.00</del></li>
+                            <li class="t5">市场价 ¥<del id="marketPrice">176.00</del></li>
+                            <div class="clear line20">
+                            </div>
+                            <div class="SecDiv" style="display:none;" id="timer"></div>
+                        </ul> -->
+
+                        <!-- 第二个ul内容 -->
+                        <!-- <ul class="txtbox_info1">
+                            <li class="info1_t1">
+                                <p class="info_left">
+                                    配 送 至&nbsp;:</p>
+                                <div class="zoli">
+                                    <div class="zox ixpop">
+                                        <a href="###"><span id="showproname" style="color: #888">福建省</span></a>
+                                        <div class="ixbox" id="dq">
+                                            <p>
+                                                <a href="###">吉林省</a>
+                                                <a href="###">北京</a>
+                                                <a href="###">内蒙古</a>
+                                                <a href="###">云南省</a>
+                                                <a href="###">上海</a>
+                                                <a href="###">四川省</a>
+                                                <a href="###">天津</a>
+                                                <a href="###">宁夏</a>
+                                                <a href="###">安徽省</a>
+                                                <a href="###">山东省</a>
+                                                <a href="###">山西省</a>
+                                                <a href="###">广东省</a>
+                                                <a href="###">广西</a>
+                                                <a href="###">新疆</a>
+                                                <a href="###">江苏省</a>
+                                                <a href="###">江西省</a>
+                                                <a href="###">河北省</a>
+                                                <a href="###">河南省</a>
+                                                <a href="###">浙江省</a>
+                                                <a href="###">海南省</a>
+                                                <a href="###">湖北省</a>
+                                                <a href="###">湖南省</a>
+                                                <a href="###">甘肃省</a>
+                                                <a href="###">福建省</a>
+                                                <a href="###">西藏</a>
+                                                <a href="###">贵州省</a>
+                                                <a href="###">辽宁省</a>
+                                                <a href="###">重庆</a>
+                                                <a href="###">陕西省</a>
+                                                <a href="###">青海省</a>
+                                                <a href="###">黑龙江省</a>
+                                                <a href="###">海外</a>
+                                            </p>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <p class="zoi" id="showSaleRule">运费 ¥6 </p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p class="zom">
+                                    <span id="quehuo">&nbsp;<span style="color:red;">还剩10件<span></span></span></span>
+                                </p>
+                                <div class="clear">
+                                </div>
+                            </li>
+                            <li class="info1_t2">
+                                <p class="info_left"> 顾客评分：</p>
+                                <p>
+                                    <span id="avgcomment">
+                                        <span class="xstars bg">
+                                            <a href="#comment" onclick="return go_comment_focus()">
+                                                <span title="4.75分">&nbsp;</span></a>
+                                        </span>
+                                        4.75分
+                                    </span>
+                                </p>
+                                (&nbsp;<span id="total_com_num" class="link1"><a href="#comment"
+                                    style="color: #888"">已有<span
+                                            id="productNumber" >34031</span>人评论</a></span>&nbsp;)
+                            </li>
+                        </ul> -->
+
+                        <!-- 第三个ul内容 -->
+                        <!-- <ul class="txtbox_info2">
+                            <li class="info2_t1">
+                                <p class="info_left"> 品牌商家：</p>
+                                <p>滋恩</p>
+                            </li>
+                            <li class="info2_t2">
+                                <p class="info_left"> 产地：</p>
+                                <p>福建南平</p>
+                            </li>
+                            <li class="info2_t3">
+                                <p class="info_left"> 等级：</p>
+                                <p>特级</p>
+                            </li>
+                            <li class="info2_t4">
+                                <p class="info_left"> 保质期：</p>
+                                <p>3年</p>
+                            </li>
+                            <li class="info2_t7">
+                                <p class="info_left"> 产品编号：</p>
+                                <p>hcw005588</p>
+                            </li>
+                            <li class="info2_t5">
+                                <p class="info_left"> 产品规格：</p>
+                                <p>50g/罐*2</p>
+                            </li>
+                            <li class="info2_t6 tt">
+                                <p class="info_left"> 存储方法：</p>
+                                <p>存放于清洁、通风、避光、干燥、无异味环境。</p>
+                            </li>
+
+                            <div class="clear">
+                            </div>
+                        </ul> -->
+
+                        <!-- 第四个ul -->
+                        <!-- <ul class="txtbox_info3">
+                            <li class="info3_t1 crz">
+                                <p class="info_left">
+                                    我要购买：
+                                </p>
+                                <div class="goods_inp">
+                                    <input id="goodsnum" style="text-align: center" name="goodsnum" value="1"
+                                        type="text">
+                                    <i class="goods_add">+</i> <i class="goods_min">-</i>
+                                </div>
+                                <p>
+                                    件
+                                </p>
+                                <p class="goods_inp_info">
+                                    <span style="display: none;">最多只能购买99件</span>
+                                </p>
+                            </li> -->
+
+                            <!--立即购买-->
+                            <!-- <li class="buy" id="nowbuy">
+                                <a id="NowShop" target="_blank" href="###">
+                                    <img src="../images/goodsinfo_buy1.png">
+                                </a>
+                            </li> -->
+
+                            <!--加入购物车-->
+                            <!-- <li class="buy" id="nowcart">
+                                <a id="AddShopCart" href="###">
+                                    <img src="../images/goodsinfo_buy2.png"
+                                        >
+                                </a>
+                            </li>
+                            <div class="clear">
+                            </div>
+                        </ul> -->
+
+
+                    </div>
+                    <!--  -->
+
+                    <!-- 右边 -->
+                    <div class="shareto_probox">
+                        <div class="probox_title">
+                            看过的用户还看过
+                        </div>
+
+                        <div class="hc_proli_r1 probox_rlist1">
+                            <div class="clear"></div>
+                        </div>
+
+                        <a class="goods1_slide-prev" href="###"></a>
+                        <a class="goods1_slide-next" href="####"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 空白格 -->
+        <div class="clear"></div>
+
+
+
+
+
+
+        <!-- +=====++++++++++++底部分割线+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <div class="bottom"></div>
+
+        <div class="consult">
+            <img src="../images/zixun.png" alt="">
+        </div>
+
+
+    </div>
+
+
+    </div>
+</body>
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/goods_tea.js"></script>
+    
+    <script>
+        $(".top").load("head.html");
+        $(".bottom").load("foot.html");
+    
+    
+    </script>
+</html>
